@@ -1,0 +1,28 @@
+
+### Cadastrar uma doação
+POST http://localhost:8080/doacoes
+Content-Type: application/json
+
+{
+    "nomeRoupa": "Camiseta",
+    "tamanho": "M",
+    "estado": "Bom",
+    "contato": "24992173099"
+}
+
+### Listar todas as doações
+GET http://localhost:8080/doacoes
+
+### Excluir uma doação pelo ID
+DELETE http://localhost:8080/doacoes/
+
+### Atualizar uma doação
+PUT http://localhost:8080/doacoes/4
+Content-Type: application/json
+
+{
+    "nomeRoupa": "Jaqueta",
+    "tamanho": "G",
+    "estado": "Novo",
+    "contato": "21988888888"
+}
